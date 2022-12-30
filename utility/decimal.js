@@ -1,9 +1,11 @@
 import pkg from 'decimal.js-light';
 const { Decimal } = pkg;
 
+import LibraryUtility from '@thzero/library_common/utility';
+
 class Utility {
 	static clean(value, places) {
-		if (value === null || value === undefined)
+		if (LibraryUtility.isNull(value))
 			return null;
 		if (value === '')
 			return null;
