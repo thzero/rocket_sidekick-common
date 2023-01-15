@@ -14,6 +14,10 @@ const Constants = {
 		Number: 'number',
 		Order: 'order'
 	},
+	Licenses: {
+		Open: 'open',
+		Public: 'public'
+	},
 	ListingTypes: {
 		Grid: 'grid',
 		List: 'list'
