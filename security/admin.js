@@ -2,6 +2,8 @@ export default {
 	options: {
 		admin: { // Role name
 			can: [ // list of allowed operations
+				'content',
+				'content:reset',
 				'news',
 				'news:create',
 				'news:edit',
