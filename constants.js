@@ -1,18 +1,7 @@
 const Constants = {
 	ErrorCodes: {
-		DuplicateName: 'duplicateName',
-		DuplicateNumber: 'duplicateNumber',
-		DuplicateOrder: 'duplicateOrder',
-		InvalidObject: 'invalidObject',
-		InvalidPermissions: 'invalidPermissions',
-		ObjectChanged: 'objectChanged',
-		QuotaReached: 'quotaExceeded'
 	},
 	ErrorFields: {
-		Generic: 'generic',
-		Name: 'name',
-		Number: 'number',
-		Order: 'order'
 	},
 	Licenses: {
 		Free: {
@@ -81,6 +70,14 @@ const Constants = {
 	NewsTypes: {
 		ADMIN: 'admin',
 		MAIN: 'main'
+	},
+	RocketTypes: {
+		high: 'high',
+		highone: 'highone',
+		hightwo: 'hightwo',
+		highthree: 'highthree',
+		low: 'low',
+		mid: 'mid'
 	},
 	Roles: {
 		Admin: 'admin',
