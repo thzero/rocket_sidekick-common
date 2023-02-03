@@ -1,4 +1,4 @@
-import SharedConstants from '../constants.js';
+import AppCommonConstants from '../constants.js';
 
 import BaseNewsData from '@thzero/library_common/data/baseNews.js';
 
@@ -15,11 +15,11 @@ class NewsData extends BaseNewsData {
 	}
 
 	_defaultStatus() {
-		return SharedConstants.Status.ACTIVE;
+		return AppCommonConstants.Status.ACTIVE;
 	}
 
 	_defaultType() {
-		return SharedConstants.NewsTypes.MAIN;
+		return AppCommonConstants.NewsTypes.MAIN;
 	}
 }
 

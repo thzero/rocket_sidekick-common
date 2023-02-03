@@ -1,16 +1,16 @@
 import pkg from 'decimal.js-light';
 const { Decimal } = pkg;
 
-import LibraryUtility from '@thzero/library_common/utility';
+import LibraryCommonUtility from '@thzero/library_common/utility';
 
-class Utility {
+class AppCommonUtility {
 	static clean(value, places) {
 		if (LibraryUtility.isNull(value))
 			return null;
 		if (value === '')
 			return null;
 		value = String.trim(value);
-		return Utility.toFixed(Utility.init(value), places);
+		return LibraryCommonUtility.toFixed(Utility.init(value), places);
 	}
 
 	static init(value) {
@@ -25,4 +25,4 @@ class Utility {
 	}
 }
 
-export default Utility;
+export default AppCommonUtility;
