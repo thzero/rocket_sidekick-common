@@ -1,0 +1,23 @@
+{
+  "name": "rocket_sidekick_common",
+  "version": "0.0.1",
+  "version_major": 0,
+  "version_minor": 0,
+  "version_patch": 1,
+  "version_date": "03/05/2023",
+  "author": "thZero.com",
+  "author_url": "https://www.thzero.com",
+  "copyright": "2020-2023",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thzero/rocket_sidekick-common.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thzero/rocket_sidekick-common/issues"
+  },
+  "dependencies": {
+    "@thzero/library_common": "^0.17.1",
+    "decimal.js-light": "^2.5.1"
+  }
+}
