@@ -1,5 +1,6 @@
 {
   "name": "rocket_sidekick_common",
+  "type": "module",
   "version": "0.0.2",
   "version_major": 0,
   "version_minor": 0,
