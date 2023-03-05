@@ -1,6 +1,5 @@
 .DS_Store
 node_modules
-node_modules2
 /dist
 
 # local env files
@@ -15,11 +14,23 @@ firebase-debug.log*
 
 # Editor directories and files
 .idea
-.vscode/**
+.vscode
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
 
-!.vscode/launch.json
+.**/
+
+.env
+.env.*
+.env*
+
+/src/config/config.json
+/src/config/config.json.bak
+/src/config/development.json
+/src/config/development.json.bak
+#/src/config/production.json
+/src/config/production.json.bak
+/src/config/productionManual.json
