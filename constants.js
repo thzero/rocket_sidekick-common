@@ -71,20 +71,30 @@ const Constants = {
 		ADMIN: 'admin',
 		MAIN: 'main'
 	},
-	RocketTypes: {
-		high: 'high',
-		highone: 'highone',
-		hightwo: 'hightwo',
-		highthree: 'highthree',
-		low: 'low',
-		mid: 'mid'
-	},
 	Roles: {
 		Admin: 'admin',
 		User: 'user'
 	},
 	Status: {
 		ACTIVE: 'active'
+	},
+	Rocketry: {
+		ManufacturerTypes: {
+			altimeters: 'altimeters',
+			motor: 'motor',
+			motorCase: 'motorCase',
+			parachute: 'parachute',
+			rocket: 'rocket',
+			trackers: 'trackers'
+		},
+		RocketTypes: {
+			high: 'high',
+			highone: 'highone',
+			hightwo: 'hightwo',
+			highthree: 'highthree',
+			low: 'low',
+			mid: 'mid'
+		}
 	}
 };
 
