@@ -3,6 +3,11 @@ const Constants = {
 	},
 	ErrorFields: {
 	},
+	IdGenerator: {
+		alphabet: '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz',
+		lengthLong: null,
+		lengthShort: null
+	},
 	Licenses: {
 		Free: {
 			apache20: {
