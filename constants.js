@@ -1,4 +1,37 @@
 const Constants = {
+	Checklists: {
+		ChecklistAltimeterTypes: {
+			primary: 'primary',
+			secondary: 'secondary'
+		},
+		ChecklistStatus: {
+			completed: 'completed',
+			none: 'none',
+			secondary: 'secondary'
+		},
+		ChecklistStepTypes: {
+			checkable: 'checkable',
+			launch: 'launch',
+			prepaltimeter: 'prepaltimeter',
+			prepchuterelease: 'prepchuterelease',
+			prepejectioncharge: 'prepejectioncharge',
+			prepmotor: 'prepmotor',
+			preprecovery: 'preprecovery',
+			section: 'section',
+			text: 'text',
+			trackingend: 'trackingend',
+			trackingstart: 'trackingstart'
+		},
+		ChecklistTypes: {
+			none: 'none',
+			launch: 'launch',
+			preparation: 'preparation'
+		},
+		DisplayTypes: {
+			Shared: 'shared',
+			User: 'user'
+		}
+	},
 	ErrorCodes: {
 	},
 	ErrorFields: {
@@ -218,6 +251,10 @@ const Constants = {
 		ACTIVE: 'active'
 	},
 	Rocketry: {
+		DisplayTypes: {
+			Site: 'site',
+			User: 'user'
+		},
 		ManufacturerTypes: {
 			altimeters: 'altimeters',
 			motor: 'motor',
