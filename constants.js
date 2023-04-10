@@ -7,6 +7,7 @@ const Constants = {
 		ChecklistStatus: {
 			completed: 'completed',
 			none: 'none',
+			inProgress: 'inprogress',
 			secondary: 'secondary'
 		},
 		ChecklistStepTypes: {
