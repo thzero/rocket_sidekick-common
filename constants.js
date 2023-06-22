@@ -147,7 +147,7 @@ const Constants = {
 			},
 			density: {
 				default: 'lbmft3',
-				lbmft3: 'lbm/ft3'
+				lbmft3: 'lbm/ft^3'
 			},
 			distance: {
 				default: 'ft',
