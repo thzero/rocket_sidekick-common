@@ -34,9 +34,16 @@ const Constants = {
 		}
 	},
 	ErrorCodes: {
-		PartIncludedInChecklist: 1,
-		PartIncludedInRocket: 2,
-		RocketIncludedInChecklist: 3
+		Checklists: {
+		},
+		Parts: {
+			IncludedInChecklist: 1,
+			IncludedInRocket: 2,
+			UpdatePublic: 3
+		},
+		Rockets: {
+			IncludedInChecklist: 4
+		}
 	},
 	ErrorFields: {
 	},
