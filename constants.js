@@ -34,6 +34,9 @@ const Constants = {
 		}
 	},
 	ErrorCodes: {
+		PartIncludedInChecklist: 1,
+		PartIncludedInRocket: 2,
+		RocketIncludedInChecklist: 3
 	},
 	ErrorFields: {
 	},
@@ -147,7 +150,7 @@ const Constants = {
 			},
 			density: {
 				default: 'lbmft3',
-				lbmft3: 'lbm/ft^3'
+				lbmft3: 'lbm/ft3'
 			},
 			distance: {
 				default: 'ft',
