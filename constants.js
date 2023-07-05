@@ -254,13 +254,6 @@ const Constants = {
 		ADMIN: 'admin',
 		MAIN: 'main'
 	},
-	PartTypes: {
-		altimeter: 'altimeter',
-		motor: 'motor',
-		motorCase: 'motorCase',
-		parachute: 'parachute',
-		trackers: 'tracker'
-	},
 	Roles: {
 		Admin: 'admin',
 		User: 'user'
@@ -280,6 +273,13 @@ const Constants = {
 			parachute: 'parachute',
 			rocket: 'rocket',
 			tracker: 'tracker'
+		},
+		PartTypes: {
+			altimeter: 'altimeter',
+			motor: 'motor',
+			motorCase: 'motorCase',
+			parachute: 'parachute',
+			trackers: 'tracker'
 		},
 		RocketTypes: {
 			high: 'high',
