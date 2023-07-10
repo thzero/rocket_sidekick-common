@@ -280,6 +280,7 @@ const Constants = {
 		PartTypes: {
 			altimeter: 'altimeter',
 			chuteProtector: 'chuteProtector',
+			chuteRelease: 'chuteRelease',
 			deploymentbag: "deploymentbag",
 			motor: 'motor',
 			motorCase: 'motorCase',
