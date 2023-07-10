@@ -268,7 +268,7 @@ const Constants = {
 		},
 		ManufacturerTypes: {
 			altimeter: 'altimeter',
-			blanket: 'blanket',
+			chuteProtector: 'chuteProtector',
 			deploymentbag: "deploymentbag",
 			motor: 'motor',
 			motorCase: 'motorCase',
@@ -279,8 +279,7 @@ const Constants = {
 		},
 		PartTypes: {
 			altimeter: 'altimeter',
-			blanket: 'blanket',
-			blanket: 'blanket',
+			chuteProtector: 'chuteProtector',
 			deploymentbag: "deploymentbag",
 			motor: 'motor',
 			motorCase: 'motorCase',
