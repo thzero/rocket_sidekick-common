@@ -269,7 +269,8 @@ const Constants = {
 		ManufacturerTypes: {
 			altimeter: 'altimeter',
 			chuteProtector: 'chuteProtector',
-			deploymentbag: "deploymentbag",
+			chuteRelease: 'chuteRelease',
+			deploymentBag: "deploymentBag",
 			motor: 'motor',
 			motorCase: 'motorCase',
 			parachute: 'parachute',
@@ -281,12 +282,12 @@ const Constants = {
 			altimeter: 'altimeter',
 			chuteProtector: 'chuteProtector',
 			chuteRelease: 'chuteRelease',
-			deploymentbag: "deploymentbag",
+			deploymentBag: "deploymentBag",
 			motor: 'motor',
 			motorCase: 'motorCase',
 			parachute: 'parachute',
 			streamer: 'streamer',
-			trackers: 'tracker'
+			tracker: 'tracker'
 		},
 		RocketTypes: {
 			high: 'high',
