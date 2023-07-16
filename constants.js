@@ -262,6 +262,10 @@ const Constants = {
 		ACTIVE: 'active'
 	},
 	Rocketry: {
+		Direction: {
+			Aft: 'aft',
+			Tip: 'tip'
+		},
 		DisplayTypes: {
 			Site: 'site',
 			User: 'user'
