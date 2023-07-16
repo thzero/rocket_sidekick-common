@@ -10,8 +10,8 @@ class Rocket extends SyncData {
 		this.description = null;
 		this.cg = null;
 		this.cgFrom = AppCommonConstants.Rocketry.Direction.Tip;
-		this.cghMeasurementUnitId = null;
-		this.cghMeasurementUnitsId = null;
+		this.cgMeasurementUnitId = null;
+		this.cgMeasurementUnitsId = null;
 		this.cp = null;
 		this.cpFrom = AppCommonConstants.Rocketry.Direction.Tip;
 		this.cpMeasurementUnitId = null;
