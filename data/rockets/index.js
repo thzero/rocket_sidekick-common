@@ -25,10 +25,12 @@ class Rocket extends SyncData {
 		this.length = null;
 		this.lengthMeasurementUnitId = null;
 		this.lengthMeasurementUnitsId = null;
+		this.manufacturerId = null;
+		this.manufacturerStockId = null;
 		this.name = null;
 		this.ownerId = null;
 		// this.showDetails = false;
-		this.stages = 1;
+		this.stages = [];
 		this.typeId = AppCommonConstants.Rocketry.RocketTypes.highone;
 		this.weight = null;
 		this.weightMeasurementUnitId = null;
