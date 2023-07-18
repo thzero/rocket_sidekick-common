@@ -1,5 +1,3 @@
-import Utility from '@thzero/library_common/utility/index.js';
-
 import AppCommonConstants from 'rocket_sidekick_common/constants.js';
 
 class ChecklistStep {
