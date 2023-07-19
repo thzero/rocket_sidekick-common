@@ -27,10 +27,6 @@ const Constants = {
 			none: 'none',
 			launch: 'launch',
 			preparation: 'preparation'
-		},
-		DisplayTypes: {
-			Shared: 'shared',
-			User: 'user'
 		}
 	},
 	ErrorCodes: {
