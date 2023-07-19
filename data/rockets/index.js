@@ -28,6 +28,7 @@ class Rocket extends SyncData {
 		this.manufacturerId = null;
 		this.manufacturerStockId = null;
 		this.name = null;
+		this.notes = null;
 		this.ownerId = null;
 		// this.showDetails = false;
 		this.stages = [];
