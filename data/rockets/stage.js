@@ -2,8 +2,8 @@ import AppCommonConstants from 'rocket_sidekick_common/constants.js';
 
 class RocketStage {
 	constructor() {
-		super();
-
+		this.id = null;
+		this.rocketId = null;
 		this.cg = null;
 		this.cgFrom = AppCommonConstants.Rocketry.Direction.Tip;
 		this.cgMeasurementUnitId = null;
