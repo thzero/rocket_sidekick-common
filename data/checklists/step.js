@@ -1,8 +1,10 @@
 import AppCommonConstants from 'rocket_sidekick_common/constants.js';
 
+import LibraryCommonUtility from '@thzero/library_common/utility/index.js';
+
 class ChecklistStep {
 	constructor() {
-		this.id = null;
+		this.id = LibraryCommonUtility.generateId();
 		this.checklistId = null;
 		this.parentId = null;
 		this.typeId = AppCommonConstants.Checklists.ChecklistStepTypes.text;

@@ -1,8 +1,10 @@
 import AppCommonConstants from 'rocket_sidekick_common/constants.js';
 
+import LibraryCommonUtility from '@thzero/library_common/utility/index.js';
+
 class RocketStage {
 	constructor() {
-		this.id = null;
+		this.id = LibraryCommonUtility.generateId();
 		this.rocketId = null;
 		this.cg = null;
 		this.cgFrom = AppCommonConstants.Rocketry.Direction.Tip;
