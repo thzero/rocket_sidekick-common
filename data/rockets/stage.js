@@ -21,6 +21,8 @@ class RocketStage {
 		this.lengthMeasurementUnitId = null;
 		this.lengthMeasurementUnitsId = null;
 		this.notes = null;
+		this.recovery = [],
+		this.tracking = [],
 		this.weight = null;
 		this.weightMeasurementUnitId = null;
 		this.weightMeasurementUnitsId = null;

@@ -30,8 +30,9 @@ class Rocket extends SyncData {
 		this.name = null;
 		this.notes = null;
 		this.ownerId = null;
-		// this.showDetails = false;
+		this.recovery = [],
 		this.stages = [];
+		this.tracking = [],
 		this.typeId = AppCommonConstants.Rocketry.RocketTypes.highone;
 		this.weight = null;
 		this.weightMeasurementUnitId = null;
