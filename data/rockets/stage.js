@@ -6,6 +6,7 @@ class RocketStage {
 	constructor() {
 		this.id = LibraryCommonUtility.generateId();
 		this.rocketId = null;
+		this.altimeters = [],
 		this.cg = null;
 		this.cgFrom = AppCommonConstants.Rocketry.Direction.Tip;
 		this.cgMeasurementUnitId = null;
