@@ -7,6 +7,7 @@ class Rocket extends SyncData {
 		super();
 
 		this.typeId = null;
+		this.altimeters = [],
 		this.description = null;
 		this.cg = null;
 		this.cgFrom = AppCommonConstants.Rocketry.Direction.Tip;
