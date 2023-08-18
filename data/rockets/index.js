@@ -1,43 +1,24 @@
 import AppCommonConstants from 'rocket_sidekick_common/constants.js';
 
 import SyncData from 'rocket_sidekick_common/data/sync.js';
+import RocketStage from 'rocket_sidekick_common/data/rockets/stages.js';
 
 class Rocket extends SyncData {
 	constructor() {
 		super();
 
+		const stage = new RocketStage();
+		stage.primary = true;
+
 		this.typeId = null;
-		this.altimeters = [],
 		this.description = null;
-		this.cg = null;
-		this.cgFrom = AppCommonConstants.Rocketry.Direction.Tip;
-		this.cgMeasurementUnitId = null;
-		this.cgMeasurementUnitsId = null;
-		this.cp = null;
-		this.cpFrom = AppCommonConstants.Rocketry.Direction.Tip;
-		this.cpMeasurementUnitId = null;
-		this.cpMeasurementUnitsId = null;
-		this.diameterMajor = null;
-		this.diameterMajorMeasurementUnitId = null;
-		this.diameterMajorMeasurementUnitsId = null;
-		this.diameterMinor = null;
-		this.diameterMinorMeasurementUnitId = null;
-		this.diameterMinorMeasurementUnitsId = null;
-		this.length = null;
-		this.lengthMeasurementUnitId = null;
-		this.lengthMeasurementUnitsId = null;
 		this.manufacturerId = null;
 		this.manufacturerStockId = null;
 		this.name = null;
 		this.notes = null;
 		this.ownerId = null;
-		this.recovery = [],
-		this.stages = [];
-		this.trackers = [],
+		this.stages = [ stage ];
 		this.typeId = AppCommonConstants.Rocketry.RocketTypes.highone;
-		this.weight = null;
-		this.weightMeasurementUnitId = null;
-		this.weightMeasurementUnitsId = null;
 	}
 }
 
