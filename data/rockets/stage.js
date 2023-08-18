@@ -15,6 +15,7 @@ class RocketStage {
 		this.cpFrom = AppCommonConstants.Rocketry.Direction.Tip;
 		this.cpMeasurementUnitId = null;
 		this.cpMeasurementUnitsId = null;
+		this.description = null;
 		this.diameterMajor = null;
 		this.diameterMajorMeasurementUnitId = null;
 		this.diameterMajorMeasurementUnitsId = null;
@@ -26,6 +27,7 @@ class RocketStage {
 		this.lengthMeasurementUnitsId = null;
 		this.manufacturerId = null;
 		this.manufacturerStockId = null;
+		this.name = null;
 		this.notes = null;
 		this.primary = null;
 		this.recovery = [],
