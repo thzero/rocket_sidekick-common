@@ -1,13 +1,13 @@
 import AppCommonConstants from 'rocket_sidekick_common/constants.js';
 
 import SyncData from 'rocket_sidekick_common/data/sync.js';
-import RocketStage from 'rocket_sidekick_common/data/rockets/stages.js';
+import RocketSetupStage from 'rocket_sidekick_common/data/rockets/setups/stage.js';
 
 class RocketSetup extends SyncData {
 	constructor() {
 		super();
 
-		const stage = new RocketStage();
+		const stage = new RocketSetupStage();
 
 		this.rocketId = null;
 		this.description = null;
