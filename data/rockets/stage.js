@@ -7,6 +7,8 @@ class RocketStage {
 		this.id = LibraryCommonUtility.generateId();
 		this.rocketId = null;
 		this.altimeters = [],
+		this.chuteProtectors = [],
+		this.chuteReleases = [],
 		this.cg = null;
 		this.cgFrom = AppCommonConstants.Rocketry.Direction.Tip;
 		this.cgMeasurementUnitId = null;
@@ -15,6 +17,7 @@ class RocketStage {
 		this.cpFrom = AppCommonConstants.Rocketry.Direction.Tip;
 		this.cpMeasurementUnitId = null;
 		this.cpMeasurementUnitsId = null;
+		this.deploymentBags = [],
 		this.description = null;
 		this.diameterMajor = null;
 		this.diameterMajorMeasurementUnitId = null;
@@ -29,8 +32,9 @@ class RocketStage {
 		this.manufacturerStockId = null;
 		this.name = null;
 		this.notes = null;
+		this.parachutes = [],
 		this.primary = null;
-		this.recovery = [],
+		this.streamers = [],
 		this.trackers = [],
 		this.weight = null;
 		this.weightMeasurementUnitId = null;
