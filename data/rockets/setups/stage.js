@@ -26,4 +26,4 @@ class RocketSetupStage {
 	}
 }
 
-export default RocketStage;
+export default RocketSetupStage;
