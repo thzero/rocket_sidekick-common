@@ -19,4 +19,4 @@ class RocketSetup extends SyncData {
 	}
 }
 
-export default Rocket;
+export default RocketSetup;
