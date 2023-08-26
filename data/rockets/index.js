@@ -14,7 +14,7 @@ class Rocket extends SyncExtData {
 		this.manufacturerStockId = null;
 		this.notes = null;
 		this.stages = [ stage ];
-		this.typeId = AppCommonConstants.Rocketry.RocketTypes.highone;
+		this.rocketTypes = [ AppCommonConstants.Rocketry.RocketTypes.highone ];
 	}
 }
 
