@@ -6,6 +6,7 @@ class RocketSetupStage {
 	constructor() {
 		this.id = LibraryCommonUtility.generateId();
 		this.rocketSetupId = null;
+		this.rocketStageId = null;
 		this.altimeters = [],
 		this.chuteProtectors = [],
 		this.chuteReleases = [],
