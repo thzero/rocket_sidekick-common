@@ -10,4 +10,4 @@ class SyncExtData extends SyncData {
 	}
 }
 
-export default AppData;
+export default SyncExtData;
