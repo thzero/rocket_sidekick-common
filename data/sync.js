@@ -4,7 +4,7 @@ class SyncData extends AppData {
 	constructor() {
 		super();
 
-		this.ownerId = false;
+		this.ownerId = null;
 		this.syncTimestamp = null;
 	}
 }
