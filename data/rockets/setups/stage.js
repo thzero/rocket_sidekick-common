@@ -17,6 +17,7 @@ class RocketSetupStage {
 		this.deploymentBags = [],
 		this.description = null;
 		this.name = null;
+		this.motors = [],
 		this.notes = null;
 		this.parachutes = [],
 		this.streamers = [],
