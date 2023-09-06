@@ -7,7 +7,6 @@ import RocketStageMotor from 'rocket_sidekick_common/data/rockets/motor.js';
 class RocketStage {
 	constructor() {
 		this.id = LibraryCommonUtility.generateId();
-		this.rocketId = null;
 		this.altimeters = [],
 		this.chuteProtectors = [],
 		this.chuteReleases = [],
@@ -33,9 +32,9 @@ class RocketStage {
 		this.manufacturerId = null;
 		this.manufacturerStockId = null;
 		this.motors = [
+			new RocketStageMotor(0),
 			new RocketStageMotor(1),
 			new RocketStageMotor(2),
-			new RocketStageMotor(3),
 		];
 		this.name = null;
 		this.notes = null;

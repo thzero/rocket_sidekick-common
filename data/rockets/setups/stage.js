@@ -8,7 +8,6 @@ class RocketSetupStage {
 	constructor() {
 		this.id = LibraryCommonUtility.generateId();
 		this.rocketSetupId = null;
-		this.rocketStageId = null;
 		this.altimeters = [],
 		this.chuteProtectors = [],
 		this.chuteReleases = [],
@@ -20,9 +19,9 @@ class RocketSetupStage {
 		this.description = null;
 		this.name = null;
 		this.motors = [
+			new RocketStepStageMotor(0),
 			new RocketStepStageMotor(1),
 			new RocketStepStageMotor(2),
-			new RocketStepStageMotor(3),
 		];
 		this.notes = null;
 		this.parachutes = [],
