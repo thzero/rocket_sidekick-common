@@ -2,6 +2,8 @@ import AppCommonConstants from 'rocket_sidekick_common/constants.js';
 
 import LibraryCommonUtility from '@thzero/library_common/utility/index.js';
 
+import RocketStepStageMotor from 'rocket_sidekick_common/data/rockets/setups/motor.js';
+
 class RocketSetupStage {
 	constructor() {
 		this.id = LibraryCommonUtility.generateId();
@@ -17,7 +19,11 @@ class RocketSetupStage {
 		this.deploymentBags = [],
 		this.description = null;
 		this.name = null;
-		this.motors = [],
+		this.motors = [
+			new RocketStepStageMotor(1),
+			new RocketStepStageMotor(2),
+			new RocketStepStageMotor(3),
+		];
 		this.notes = null;
 		this.parachutes = [],
 		this.streamers = [],
