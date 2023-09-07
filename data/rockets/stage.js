@@ -32,9 +32,9 @@ class RocketStage {
 		this.manufacturerId = null;
 		this.manufacturerStockId = null;
 		this.motors = [
-			new RocketStageMotor(0),
-			new RocketStageMotor(1),
-			new RocketStageMotor(2),
+			new RocketStageMotor(0, 1),
+			new RocketStageMotor(1, null),
+			new RocketStageMotor(2, null),
 		];
 		this.name = null;
 		this.notes = null;
