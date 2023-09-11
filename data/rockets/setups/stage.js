@@ -7,7 +7,7 @@ import RocketStepStageMotor from 'rocket_sidekick_common/data/rockets/setups/mot
 class RocketSetupStage {
 	constructor() {
 		this.id = LibraryCommonUtility.generateId();
-		this.rocketSetupId = null;
+		this.rocketStageId = null;
 		this.altimeters = [],
 		this.chuteProtectors = [],
 		this.chuteReleases = [],
@@ -16,8 +16,8 @@ class RocketSetupStage {
 		this.cgMeasurementUnitId = null;
 		this.cgMeasurementUnitsId = null;
 		this.deploymentBags = [],
-		this.description = null;
-		this.name = null;
+		this.enabled = true;
+		this.index = null;
 		this.motors = [
 			new RocketStepStageMotor(0),
 			new RocketStepStageMotor(1),
