@@ -5,7 +5,9 @@ class RocketStepStageMotor {
 		this.id = LibraryCommonUtility.generateId();
 		this.rocketStageMotorId = null;
 		this.index = index;
-		this.motor = null;
+		this.motorId = null;
+		this.motorCaseId = null;
+		this.delay = null;
 	}
 }
 

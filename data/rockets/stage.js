@@ -26,6 +26,7 @@ class RocketStage {
 		this.diameterMinor = null;
 		this.diameterMinorMeasurementUnitId = null;
 		this.diameterMinorMeasurementUnitsId = null;
+		this.index = null;
 		this.length = null;
 		this.lengthMeasurementUnitId = null;
 		this.lengthMeasurementUnitsId = null;
