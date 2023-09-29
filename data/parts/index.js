@@ -1,14 +1,11 @@
-import SyncData from 'rocket_sidekick_common/data/sync.js';
+import SyncExtData from 'rocket_sidekick_common/data/syncExt.js';
 
-class Part extends SyncData {
+class Part extends SyncExtData {
 	constructor() {
 		super();
 
 		this.typeId = null;
-		this.description = null;
 		this.public = false;
-		this.name = null;
-		this.ownerId = null;
 	}
 }
 

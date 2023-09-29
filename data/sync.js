@@ -5,6 +5,7 @@ class SyncData extends AppData {
 		super();
 
 		this.ownerId = null;
+		this.public = false;
 		this.syncTimestamp = null;
 	}
 }
