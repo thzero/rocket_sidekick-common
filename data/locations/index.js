@@ -9,6 +9,7 @@ class Location extends SyncExtData {
 		this.name = null;
 		this.address = {};
 		this.iterations = [];
+		this.organizations = [];
 		this.rocketTypes = [];
 	}
 }
