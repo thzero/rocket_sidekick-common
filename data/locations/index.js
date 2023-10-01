@@ -4,11 +4,10 @@ class Location extends SyncExtData {
 	constructor() {
 		super();
 
-		this.typeId = null;
-		this.description = null;
-		this.name = null;
 		this.address = {};
+		this.experimental = false;
 		this.iterations = [];
+		this.organizations = [];
 		this.rocketTypes = [];
 	}
 }
