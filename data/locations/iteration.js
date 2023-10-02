@@ -4,6 +4,8 @@ import LocationAddress from './address.js';
 
 class LocationIteration extends LocationAddress {
 	constructor() {
+		super();
+		
 		this.id = LibraryCommonUtility.generateId();
 		this.name = null;
 		this.experimental = false;
