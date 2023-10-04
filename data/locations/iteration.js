@@ -7,6 +7,7 @@ class LocationIteration extends LocationAddress {
 		super();
 		
 		this.id = LibraryCommonUtility.generateId();
+		this.address = {};
 		this.name = null;
 		this.experimental = false;
 		this.organizations = [];
