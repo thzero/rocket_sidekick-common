@@ -1,8 +1,6 @@
 import LibraryCommonUtility from '@thzero/library_common/utility/index.js';
 
-import LocationAddress from './address.js';
-
-class LocationIteration extends LocationAddress {
+class LocationIteration {
 	constructor() {
 		super();
 		
