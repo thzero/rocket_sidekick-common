@@ -6,7 +6,8 @@ class LocationIteration {
 		this.address = {};
 		this.name = null;
 		this.experimental = false;
-		this.organizations = [];
+		this.organizations = null;
+		this.rocketTypes = null;
 		this.year = null;
 	}
 }
