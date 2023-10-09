@@ -266,6 +266,14 @@ const Constants = {
 			Site: 'site',
 			User: 'user'
 		},
+		Launches: {
+			Success: 'success',
+			FailureReasons: {
+				cato: 'cato',
+				deployment: 'deployment',
+				lost: 'lost'
+			}
+		},
 		ManufacturerTypes: {
 			altimeter: 'altimeter',
 			chuteProtector: 'chuteProtector',
