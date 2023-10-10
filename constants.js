@@ -271,7 +271,8 @@ const Constants = {
 			FailureReasons: {
 				cato: 'cato',
 				deployment: 'deployment',
-				lost: 'lost'
+				lost: 'lost',
+				rud: 'rud'
 			}
 		},
 		ManufacturerTypes: {
