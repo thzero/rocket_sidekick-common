@@ -6,12 +6,10 @@ class Launch extends SyncExtData {
 
 		this.description = null;
 		this.name = null;
-		this.LaunchResults = null;
 		this.locationId = null;
 		this.locationIterationId = null;
 		this.rocketId = null;
-		this.success = null;
-		this.successReaons = null;
+		this.LaunchResults = null;
 	}
 }
 

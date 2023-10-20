@@ -267,6 +267,7 @@ const Constants = {
 			User: 'user'
 		},
 		Launches: {
+			Success: 'success',
 			FailureReasons: {
 				cato: 'cato',
 				deployment: 'deployment',
