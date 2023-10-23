@@ -268,11 +268,18 @@ const Constants = {
 		},
 		Launches: {
 			Success: 'success',
-			FailureReasons: {
-				cato: 'cato',
-				deployment: 'deployment',
-				lost: 'lost',
-				rud: 'rud'
+			Reasons: {
+				Failure: {
+					cato: 'cato',
+					deployment: 'deployment',
+					lost: 'lost',
+					rud: 'rud'
+				},
+				Success: {
+					delayed: 'delayed',
+					failed: 'failed',
+					success: 'success'
+				}
 			}
 		},
 		ManufacturerTypes: {
