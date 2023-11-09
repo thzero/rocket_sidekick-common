@@ -250,6 +250,7 @@ const Constants = {
 		types: {
 			acceleration: 'acceleration',
 			area: 'area',
+			altitude: 'altitude',
 			fluid: 'fluid',
 			density: 'density',
 			distance: 'distance',
