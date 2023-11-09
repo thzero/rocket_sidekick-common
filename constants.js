@@ -151,6 +151,11 @@ const Constants = {
 				in2: 'in^2',
 				ft2: 'ft^2'
 			},
+			altitude: {
+				default: 'ft',
+				ft: 'ft',
+				mi: 'mi'
+			},
 			density: {
 				default: 'lbmft3',
 				lbmft3: 'lbm/ft^3'
@@ -196,6 +201,11 @@ const Constants = {
 				cm2: 'cm^2',
 				m2: 'm^2',
 				mm2: 'mm^2'
+			},
+			altitude: {
+				default: 'm',
+				m: 'm',
+				km: 'km'
 			},
 			density: {
 				default: 'kgm3',
