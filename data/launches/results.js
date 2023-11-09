@@ -2,14 +2,16 @@ class LaunchResults {
 	constructor() {
 		super();
 
-		this.flightAltitude = null;
-		this.flightVelocity = null;
-		this.flightAcceleration = null;
-		this.launchCoordsLat = null;
-		this.launchoordsLong = null;
-		this.landingCoordsLat = null;
-		this.landingCoordsLong = null;
-		this.landingVelocity = null;
+		this.accelerationMax = null;
+		this.altitudeDrogue = null;
+		this.altitudeMain = null;
+		this.altitudeMax = null;
+		this.coordsLatLaunch = null;
+		this.coordsLongLaunch = null;
+		this.coordsLatRecovery = null;
+		this.coordsLongRecovery = null;
+		this.velocityRecovery = null;
+		this.velcoityMax = null;
 	}
 }
 
