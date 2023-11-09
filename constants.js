@@ -119,6 +119,9 @@ const Constants = {
 		area: {
 			id: 'area'
 		},
+		altitude: {
+			id: 'altitude'
+		},
 		density: {
 			id: 'density'
 		},
