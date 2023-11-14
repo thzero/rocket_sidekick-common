@@ -5,7 +5,7 @@ import LibraryCommonUtility from '@thzero/library_common/utility/index.js';
 import RocketStageMotor from 'rocket_sidekick_common/data/rockets/motor.js';
 
 class RocketStage {
-	constructor() {
+	constructor(index) {
 		this.id = LibraryCommonUtility.generateId();
 		this.altimeters = [],
 		this.chuteProtectors = [],
@@ -26,7 +26,7 @@ class RocketStage {
 		this.diameterMinor = null;
 		this.diameterMinorMeasurementUnitId = null;
 		this.diameterMinorMeasurementUnitsId = null;
-		this.index = null;
+		this.index = index;
 		this.length = null;
 		this.lengthMeasurementUnitId = null;
 		this.lengthMeasurementUnitsId = null;
