@@ -10,10 +10,10 @@ class RocketStage {
 		this.altimeters = [],
 		this.chuteProtectors = [],
 		this.chuteReleases = [],
-		this.cg = null;
-		this.cgFrom = AppCommonConstants.Rocketry.Direction.Tip;
-		this.cgMeasurementUnitId = null;
-		this.cgMeasurementUnitsId = null;
+		// this.cg = null;
+		// this.cgFrom = AppCommonConstants.Rocketry.Direction.Tip;
+		// this.cgMeasurementUnitId = null;
+		// this.cgMeasurementUnitsId = null;
 		this.cp = null;
 		this.cpFrom = AppCommonConstants.Rocketry.Direction.Tip;
 		this.cpMeasurementUnitId = null;
@@ -37,7 +37,7 @@ class RocketStage {
 			new RocketStageMotor(1, null),
 			new RocketStageMotor(2, null),
 		];
-		this.name = null;
+		// this.name = null;
 		this.notes = null;
 		this.parachutes = [],
 		this.primary = null;
