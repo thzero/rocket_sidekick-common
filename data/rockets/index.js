@@ -7,7 +7,7 @@ class Rocket extends SyncExtData {
 	constructor() {
 		super();
 
-		const stage = new RocketStage();
+		const stage = new RocketStage(0);
 		stage.primary = true;
 
 		this.manufacturerId = null;
