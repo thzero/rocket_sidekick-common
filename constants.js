@@ -326,6 +326,13 @@ const Constants = {
 			highthree: 'highthree',
 			low: 'low',
 			mid: 'mid'
+		},
+		RocketTypeRanks: {
+			highone: 2,
+			hightwo: 3,
+			highthree: 4,
+			low: 0,
+			mid: 1
 		}
 	}
 };
