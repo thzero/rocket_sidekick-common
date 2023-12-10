@@ -266,17 +266,10 @@ const Constants = {
 			density: 'density',
 			distance: 'distance',
 			length: 'length',
+			temperature: 'temperature',
 			velocity: 'velocity',
 			volume: 'volume',
 			weight: 'weight'
-		},
-		weather: {
-			clear: 'clear',
-			cloudy: 'cloudy',
-			cloudyPartial: 'cloudyPartial',
-			overcast: 'overcast',
-			raining: 'raining',
-			snowing: 'snowing'
 		}
 	},
 	NewsTypes: {
@@ -313,6 +306,14 @@ const Constants = {
 					failed: 'failed',
 					success: 'success'
 				}
+			},
+			Weather: {
+				clear: 'clear',
+				cloudy: 'cloudy',
+				cloudyPartial: 'cloudyPartial',
+				overcast: 'overcast',
+				raining: 'raining',
+				snowing: 'snowing'
 			}
 		},
 		ManufacturerTypes: {
