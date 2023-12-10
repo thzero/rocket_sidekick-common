@@ -134,6 +134,9 @@ const Constants = {
 		length: {
 			id: 'length'
 		},
+		temperature: {
+			id: 'temperature'
+		},
 		velocity: {
 			id: 'velocity'
 		},
@@ -176,6 +179,10 @@ const Constants = {
 				default: 'in',
 				in: 'in',
 				ft: 'ft'
+			},
+			temperature: {
+				default: 'f',
+				f: 'F'
 			},
 			velocity: {
 				default: 'fts',
@@ -229,6 +236,10 @@ const Constants = {
 				mm: 'mm',
 				cm: 'cm',
 				m: 'm'
+			},
+			temperature: {
+				default: 'c',
+				c: 'C'
 			},
 			velocity: {
 				default: 'ms',
