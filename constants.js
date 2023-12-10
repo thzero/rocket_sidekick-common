@@ -269,6 +269,14 @@ const Constants = {
 			velocity: 'velocity',
 			volume: 'volume',
 			weight: 'weight'
+		},
+		weather: {
+			clear: 'clear',
+			cloudy: 'cloudy',
+			cloudyPartial: 'cloudyPartial',
+			overcast: 'overcast',
+			raining: 'raining',
+			snowing: 'snowing'
 		}
 	},
 	NewsTypes: {
