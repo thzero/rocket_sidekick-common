@@ -5,6 +5,7 @@ class Launch extends SyncExtData {
 		super();
 
 		this.albumUrl = null;
+		this.ceiling = null;
 		this.date = null;
 		this.description = null;
 		this.failureReasons = null;
@@ -17,6 +18,7 @@ class Launch extends SyncExtData {
 		this.success = null;
 		this.temperature = null;
 		this.videoUrl = null;
+		this.weather = null;
 		this.windSpeed = null;
 	}
 }
