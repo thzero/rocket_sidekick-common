@@ -3,8 +3,8 @@ class LaunchResults {
 		super();
 
 		this.accelerationMax = null;
-		this.altitudeDrogue = null;
-		this.altitudeMain = null;
+		this.altitudeDeployDrogue = null;
+		this.altitudeDeployMain = null;
 		this.altitudeMax = null;
 		this.coordsLatLaunch = null;
 		this.coordsLongLaunch = null;
