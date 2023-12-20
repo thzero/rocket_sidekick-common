@@ -32,13 +32,25 @@ const Constants = {
 	ErrorCodes: {
 		Checklists: {
 		},
+		Launches: {
+			IncludedInChecklist: 201,
+			IncludedInLaunch: 202,
+			IncludedInRocket: 203,
+			IncludedInRocketSetup: 204
+		},
+		Locations: {
+			IncludedInChecklist: 301,
+			IncludedInLaunch: 302
+		},
 		Parts: {
-			IncludedInChecklist: 1,
-			IncludedInRocket: 2,
-			UpdatePublic: 3
+			IncludedInChecklist: 401,
+			IncludedInRocket: 402,
+			UpdatePublic: 403
 		},
 		Rockets: {
-			IncludedInChecklist: 4
+			IncludedInChecklist: 591,
+			IncludedInLaunch: 592,
+			IncludedInRocketSetup: 593
 		}
 	},
 	ErrorFields: {
