@@ -366,6 +366,12 @@ const Constants = {
 			low: 0,
 			mid: 1
 		}
+	},
+	Site: {
+		emails: {
+			contributing: "rocketsidekick@thzero.com",
+			inquiry: "rocketsidekick@thzero.com"
+		}
 	}
 };
 
