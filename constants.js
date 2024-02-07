@@ -10,6 +10,9 @@ const Constants = {
 			inProgress: 'inprogress',
 			secondary: 'secondary'
 		},
+		ChecklistStepStatus: {
+			completed: 'completed'
+		},
 		ChecklistStepTypes: {
 			checkable: 'checkable',
 			launch: 'launch',
