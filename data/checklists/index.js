@@ -8,10 +8,10 @@ class Checklist extends SyncExtData {
 
 		this.typeId = null;
 		this.isDefault = false;
-		this.launchTypeId = AppCommonConstants.Rocketry.RocketTypes.all;
 		// this.rocketAttachable = false;
 		this.rocketId = null;
 		this.rocketSetupId = null;
+		this.rocketTypes = [ ];
 		// this.showDetails = false;
 		this.statusId = AppCommonConstants.Checklists.ChecklistStatus.none;
 		this.steps = [];

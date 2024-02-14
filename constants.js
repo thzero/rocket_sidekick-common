@@ -355,7 +355,6 @@ const Constants = {
 			tracker: 'tracker'
 		},
 		RocketTypes: {
-			high: 'high',
 			highone: 'highone',
 			hightwo: 'hightwo',
 			highthree: 'highthree',
