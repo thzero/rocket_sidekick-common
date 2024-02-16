@@ -3,6 +3,7 @@ export default {
 		user: {
 			can: [ // list of allowed operations
 				'checklists',
+				'inventory',
 				'rockets',
 				'sync',
 				'user'
