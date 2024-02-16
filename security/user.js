@@ -4,6 +4,7 @@ export default {
 			can: [ // list of allowed operations
 				'checklists',
 				'inventory',
+				'parts',
 				'rockets',
 				'sync',
 				'user'
