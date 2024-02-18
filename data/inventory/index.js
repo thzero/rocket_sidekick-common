@@ -4,6 +4,7 @@ class Inventory extends SyncExtData {
 	constructor() {
 		super();
 
+		this.types = [];
 	}
 }
 

@@ -5,7 +5,6 @@ class Part extends SyncExtData {
 		super();
 
 		this.typeId = null;
-		this.public = false;
 	}
 }
 
