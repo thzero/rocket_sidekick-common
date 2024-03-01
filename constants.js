@@ -46,7 +46,7 @@ const Constants = {
 			IncludedInLaunch: 302
 		},
 		Parts: {
-			IncludedInChecklist: 401,
+			IncludedInInventory: 401,
 			IncludedInRocket: 402,
 			UpdatePublic: 403
 		},
