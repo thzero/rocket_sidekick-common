@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@thzero/library_common": "^0.17",
+    "convert": "^5.0.0",
     "decimal.js-light": "^2.5.1"
   }
 }
