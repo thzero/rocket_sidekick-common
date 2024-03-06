@@ -4,7 +4,7 @@
 //const convert = configureMeasurements(allMeasures);
 
 // convert
-import convert from 'convert';
+import { convert as convertSvc } from 'convert';
 
 class ConvertUtility {
 	static MeasurementConversionKey = 'Metric';
@@ -19,11 +19,11 @@ class ConvertUtility {
 		return Number(Math.round(value+'e'+decimals)+'e-'+decimals);
 	} 
 
-	static convert2(value, from, to) {
+	static convert(value, from, to) {
 		// convert-units
-		// return convert2(value).from(from).to(to);
+		// return convert(value).from(from).to(to);
 		// convert
-		return convert(value, from).to(to);
+		return convertSvc(value, from).to(to);
 	}
 
 	static convertMeasurement(correlationId, value, unitId, type) {
@@ -37,38 +37,38 @@ class ConvertUtility {
 		value = Number(value);
 
 		if (type.toLowerCase().indexOf('acceleration') > -1)
-			return ConvertUtility.round(ConvertUtility.convert2(value, unitId, 'm/s2'));
+			return ConvertUtility.round(ConvertUtility.convert(value, unitId, 'm/s2'));
 		if (type.toLowerCase().indexOf('altitude') > -1)
-			return ConvertUtility.round(ConvertUtility.convert2(value, unitId, 'm'));
+			return ConvertUtility.round(ConvertUtility.convert(value, unitId, 'm'));
 		if (type.toLowerCase().indexOf('area') > -1)
-			return ConvertUtility.round(ConvertUtility.convert2(value, unitId, 'm2'));
+			return ConvertUtility.round(ConvertUtility.convert(value, unitId, 'm2'));
 		if (type.toLowerCase().indexOf('diameter') > -1)
-			return ConvertUtility.round(ConvertUtility.convert2(value, unitId, 'cm'));
+			return ConvertUtility.round(ConvertUtility.convert(value, unitId, 'cm'));
 		if (type.toLowerCase().indexOf('dimension') > -1)
-			return ConvertUtility.round(ConvertUtility.convert2(value, unitId, 'cm'));
+			return ConvertUtility.round(ConvertUtility.convert(value, unitId, 'cm'));
 		if (type.toLowerCase().indexOf('distance') > -1)
-			return ConvertUtility.round(ConvertUtility.convert2(value, unitId, 'm'));
+			return ConvertUtility.round(ConvertUtility.convert(value, unitId, 'm'));
 		if (type.toLowerCase().indexOf('length') > -1)
-			return ConvertUtility.round(ConvertUtility.convert2(value, unitId, 'cm'));
+			return ConvertUtility.round(ConvertUtility.convert(value, unitId, 'cm'));
 		if (type.toLowerCase().indexOf('temperature') > -1)
-			return ConvertUtility.round(ConvertUtility.convert2(value, unitId, 'C'));
+			return ConvertUtility.round(ConvertUtility.convert(value, unitId, 'C'));
 		if (type.toLowerCase().indexOf('velocity') > -1)
-			return ConvertUtility.round(ConvertUtility.convert2(value, unitId, 'm/s'));
+			return ConvertUtility.round(ConvertUtility.convert(value, unitId, 'm/s'));
 		if (type.toLowerCase().indexOf('volume') > -1)
-			return ConvertUtility.round(ConvertUtility.convert2(value, unitId, 'mm3'));
+			return ConvertUtility.round(ConvertUtility.convert(value, unitId, 'mm3'));
 		if (type.toLowerCase().indexOf('weight') > -1)
-			return ConvertUtility.round(ConvertUtility.convert2(value, unitId, 'kg'));
+			return ConvertUtility.round(ConvertUtility.convert(value, unitId, 'kg'));
 		
 		if (type.toLowerCase().indexOf('ceiling') > -1)
-			return ConvertUtility.round(ConvertUtility.convert2(value, unitId, 'm'));
+			return ConvertUtility.round(ConvertUtility.convert(value, unitId, 'm'));
 		if (type.toLowerCase().indexOf('cgFrom') > -1)
-			return ConvertUtility.round(ConvertUtility.convert2(value, unitId, 'cm'));
+			return ConvertUtility.round(ConvertUtility.convert(value, unitId, 'cm'));
 		if (type.toLowerCase().indexOf('diameter') > -1)
-			return ConvertUtility.round(ConvertUtility.convert2(value, unitId, 'cm'));
+			return ConvertUtility.round(ConvertUtility.convert(value, unitId, 'cm'));
 		if (type.toLowerCase().indexOf('dimension') > -1)
-			return ConvertUtility.round(ConvertUtility.convert2(value, unitId, 'cm'));
+			return ConvertUtility.round(ConvertUtility.convert(value, unitId, 'cm'));
 		if (type.toLowerCase().indexOf('windSpeed') > -1)
-			return ConvertUtility.round(ConvertUtility.convert2(value, unitId, 'm/s'));
+			return ConvertUtility.round(ConvertUtility.convert(value, unitId, 'm/s'));
 
 		return null;
 	}
@@ -84,13 +84,13 @@ class ConvertUtility {
 		value = Number(value);
 
 		if (type.toLowerCase().indexOf('diameter') > -1)
-			return ConvertUtility.round(ConvertUtility.convert2(value, unitId, 'cm'));
+			return ConvertUtility.round(ConvertUtility.convert(value, unitId, 'cm'));
 		if (type.toLowerCase().indexOf('dimension') > -1)
-			return ConvertUtility.round(ConvertUtility.convert2(value, unitId, 'cm'));
+			return ConvertUtility.round(ConvertUtility.convert(value, unitId, 'cm'));
 		if (type.toLowerCase().indexOf('length') > -1)
-			return ConvertUtility.round(ConvertUtility.convert2(value, unitId, 'cm'));
+			return ConvertUtility.round(ConvertUtility.convert(value, unitId, 'cm'));
 		if (type.toLowerCase().indexOf('weight') > -1)
-			return ConvertUtility.round(ConvertUtility.convert2(value, unitId, 'kg'));
+			return ConvertUtility.round(ConvertUtility.convert(value, unitId, 'kg'));
 
 		return null;
 	}
@@ -112,36 +112,36 @@ class ConvertUtility {
 				continue;
 
 			if (property.toLowerCase().indexOf('acceleration') > -1)
-				item[property + ConvertUtility.MeasurementConversionKey] = ConvertUtility.round(ConvertUtility.convert2(value, unitId, 'm/s2'));
+				item[property + ConvertUtility.MeasurementConversionKey] = ConvertUtility.round(ConvertUtility.convert(value, unitId, 'm/s2'));
 			else if (property.toLowerCase().indexOf('altitude') > -1)
-				item[property + ConvertUtility.MeasurementConversionKey] = ConvertUtility.round(ConvertUtility.convert2(value, unitId, 'm'));
+				item[property + ConvertUtility.MeasurementConversionKey] = ConvertUtility.round(ConvertUtility.convert(value, unitId, 'm'));
 			else if (property.toLowerCase().indexOf('area') > -1)
-				item[property + ConvertUtility.MeasurementConversionKey] = ConvertUtility.round(ConvertUtility.convert2(value, unitId, 'm2'));
+				item[property + ConvertUtility.MeasurementConversionKey] = ConvertUtility.round(ConvertUtility.convert(value, unitId, 'm2'));
 			else if (property.toLowerCase().indexOf('distance') > -1)
-				item[property + ConvertUtility.MeasurementConversionKey] = ConvertUtility.round(ConvertUtility.convert2(value, unitId, 'm'));
+				item[property + ConvertUtility.MeasurementConversionKey] = ConvertUtility.round(ConvertUtility.convert(value, unitId, 'm'));
 			else if (property.toLowerCase().indexOf('length') > -1)
-				item[property + ConvertUtility.MeasurementConversionKey] = ConvertUtility.round(ConvertUtility.convert2(value, unitId, 'cm'));
+				item[property + ConvertUtility.MeasurementConversionKey] = ConvertUtility.round(ConvertUtility.convert(value, unitId, 'cm'));
 			else if (property.toLowerCase().indexOf('temperature') > -1)
-				item[property + ConvertUtility.MeasurementConversionKey] = ConvertUtility.round(ConvertUtility.convert2(value, unitId, 'C'));
+				item[property + ConvertUtility.MeasurementConversionKey] = ConvertUtility.round(ConvertUtility.convert(value, unitId, 'C'));
 			else if (property.toLowerCase().indexOf('velocity') > -1)
-				item[property + ConvertUtility.MeasurementConversionKey] = ConvertUtility.round(ConvertUtility.convert2(value, unitId, 'm/s'));
+				item[property + ConvertUtility.MeasurementConversionKey] = ConvertUtility.round(ConvertUtility.convert(value, unitId, 'm/s'));
 			else if (property.toLowerCase().indexOf('volume') > -1)
-				item[property + ConvertUtility.MeasurementConversionKey] = ConvertUtility.round(ConvertUtility.convert2(value, unitId, 'mm3'));
+				item[property + ConvertUtility.MeasurementConversionKey] = ConvertUtility.round(ConvertUtility.convert(value, unitId, 'mm3'));
 			else if (property.toLowerCase().indexOf('weight') > -1)
-				item[property + ConvertUtility.MeasurementConversionKey] = ConvertUtility.round(ConvertUtility.convert2(value, unitId, 'kg'));
+				item[property + ConvertUtility.MeasurementConversionKey] = ConvertUtility.round(ConvertUtility.convert(value, unitId, 'kg'));
 				
 			else if (property.toLowerCase().indexOf('ceiling') > -1)
-				item[property + ConvertUtility.MeasurementConversionKey] = ConvertUtility.round(ConvertUtility.convert2(value, unitId, 'm'));
+				item[property + ConvertUtility.MeasurementConversionKey] = ConvertUtility.round(ConvertUtility.convert(value, unitId, 'm'));
 			else if (property.toLowerCase().indexOf('cgFrom') > -1)
-				item[property + ConvertUtility.MeasurementConversionKey] = ConvertUtility.round(ConvertUtility.convert2(value, unitId, 'cm'));
+				item[property + ConvertUtility.MeasurementConversionKey] = ConvertUtility.round(ConvertUtility.convert(value, unitId, 'cm'));
 			else if (property.toLowerCase().indexOf('cpFrom') > -1)
-				item[property + ConvertUtility.MeasurementConversionKey] = ConvertUtility.round(ConvertUtility.convert2(value, unitId, 'cm'));
+				item[property + ConvertUtility.MeasurementConversionKey] = ConvertUtility.round(ConvertUtility.convert(value, unitId, 'cm'));
 			else if (property.toLowerCase().indexOf('diameter') > -1)
-				item[property + ConvertUtility.MeasurementConversionKey] = ConvertUtility.round(ConvertUtility.convert2(value, unitId, 'cm'));
+				item[property + ConvertUtility.MeasurementConversionKey] = ConvertUtility.round(ConvertUtility.convert(value, unitId, 'cm'));
 			else if (property.toLowerCase().indexOf('dimension') > -1)
-				item[property + ConvertUtility.MeasurementConversionKey] = ConvertUtility.round(ConvertUtility.convert2(value, unitId, 'cm'));
+				item[property + ConvertUtility.MeasurementConversionKey] = ConvertUtility.round(ConvertUtility.convert(value, unitId, 'cm'));
 			else if (property.toLowerCase().indexOf('windSpeed') > -1)
-				item[property + ConvertUtility.MeasurementConversionKey] = ConvertUtility.round(ConvertUtility.convert2(value, unitId, 'm/s'));
+				item[property + ConvertUtility.MeasurementConversionKey] = ConvertUtility.round(ConvertUtility.convert(value, unitId, 'm/s'));
 		}
 	}
 
@@ -163,19 +163,19 @@ class ConvertUtility {
 				continue;
 
 			if (property.toLowerCase().indexOf('diameter') > -1) {
-				item[property + ConvertUtility.MeasurementConversionKey] = ConvertUtility.round(ConvertUtility.convert2(value, unitId, 'cm'));
+				item[property + ConvertUtility.MeasurementConversionKey] = ConvertUtility.round(ConvertUtility.convert(value, unitId, 'cm'));
 				updated = true;
 			}
 			else if (property.toLowerCase().indexOf('dimension') > -1) {
-				item[property + ConvertUtility.MeasurementConversionKey] = ConvertUtility.round(ConvertUtility.convert2(value, unitId, 'cm'));
+				item[property + ConvertUtility.MeasurementConversionKey] = ConvertUtility.round(ConvertUtility.convert(value, unitId, 'cm'));
 				updated = true;
 			}
 			else if (property.toLowerCase().indexOf('length') > -1) {
-				item[property + ConvertUtility.MeasurementConversionKey] = ConvertUtility.round(ConvertUtility.convert2(value, unitId, 'cm'));
+				item[property + ConvertUtility.MeasurementConversionKey] = ConvertUtility.round(ConvertUtility.convert(value, unitId, 'cm'));
 				updated = true;
 			}
 			else if (property.toLowerCase().indexOf('weight') > -1) {
-				item[property + ConvertUtility.MeasurementConversionKey] = ConvertUtility.round(ConvertUtility.convert2(value, unitId, 'kg'));
+				item[property + ConvertUtility.MeasurementConversionKey] = ConvertUtility.round(ConvertUtility.convert(value, unitId, 'kg'));
 				updated = true;
 			}
 		}
@@ -193,13 +193,13 @@ class ConvertUtility {
 			return null;
 
 		if (property.toLowerCase().indexOf('diameter') > -1)
-			return ConvertUtility.round(ConvertUtility.convert2(value, unitId, 'cm'));
+			return ConvertUtility.round(ConvertUtility.convert(value, unitId, 'cm'));
 		if (property.toLowerCase().indexOf('dimension') > -1)
-			return ConvertUtility.round(ConvertUtility.convert2(value, unitId, 'cm'));
+			return ConvertUtility.round(ConvertUtility.convert(value, unitId, 'cm'));
 		if (property.toLowerCase().indexOf('length') > -1)
-			return ConvertUtility.round(ConvertUtility.convert2(value, unitId, 'cm'));
+			return ConvertUtility.round(ConvertUtility.convert(value, unitId, 'cm'));
 		if (property.toLowerCase().indexOf('weight') > -1)
-			return ConvertUtility.round(ConvertUtility.convert2(value, unitId, 'kg'));
+			return ConvertUtility.round(ConvertUtility.convert(value, unitId, 'kg'));
 
 		return null;
 	}
