@@ -8,6 +8,8 @@ class Checklist extends SyncExtData {
 
 		this.typeId = null;
 		this.isDefault = false;
+		this.isShared = false;
+		this.isTemplate = false;
 		// this.rocketAttachable = false;
 		this.rocketId = null;
 		this.rocketSetupId = null;
