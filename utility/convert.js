@@ -1,10 +1,10 @@
 // convert-units
-// convert-units// import configureMeasurements from 'convert-units';
-// import allMeasures from 'convert-units/definitions/all';
-//const convert = configureMeasurements(allMeasures);
+import configureMeasurements from './convert/index.js';
+import allMeasures from './convert/definitions/all.js';
+const convertSvc = configureMeasurements(allMeasures);
 
 // convert
-import { convert as convertSvc } from 'convert';
+// import { convert as convertSvc } from 'convert';
 
 class ConvertUtility {
 	static MeasurementConversionKey = 'Metric';
@@ -21,9 +21,9 @@ class ConvertUtility {
 
 	static convert(value, from, to) {
 		// convert-units
-		// return convert(value).from(from).to(to);
+		return convertSvc(value).from(from).to(to);
 		// convert
-		return convertSvc(value, from).to(to);
+		// return convertSvc(value, from).to(to);
 	}
 
 	static convertMeasurement(correlationId, value, unitId, type) {
