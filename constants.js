@@ -291,19 +291,13 @@ const Constants = {
 		ADMIN: 'admin',
 		MAIN: 'main'
 	},
-	Roles: {
-		Admin: 'admin',
-		User: 'user'
-	},
-	Status: {
-		ACTIVE: 'active'
-	},
 	Rocketry: {
 		Direction: {
 			Aft: 'aft',
 			Tip: 'tip'
 		},
 		DisplayTypes: {
+			GamerTag: 'gamerTag',
 			Site: 'site',
 			User: 'user'
 		},
@@ -369,11 +363,18 @@ const Constants = {
 			mid: 1
 		}
 	},
+	Roles: {
+		Admin: 'admin',
+		User: 'user'
+	},
 	Site: {
 		emails: {
 			contributing: "rocketsidekick@thzero.com",
 			inquiry: "rocketsidekick@thzero.com"
 		}
+	},
+	Status: {
+		ACTIVE: 'active'
 	}
 };
 
